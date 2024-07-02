@@ -148,12 +148,21 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.team-members img {
-    max-height: 150px;
+.team-members .image-container img {
+    height: 150px;
+    margin-top: 20px;
     margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+
+.team-members img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .team-members a {
